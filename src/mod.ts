@@ -2,13 +2,17 @@ import { plugin as _plugin } from "./plugin.ts";
 
 /**
  * React Hooks rules for Deno Lint.
+ * The plugin adapts rules from `eslint-plugin-react-hooks` for Deno Lint.
+ * Rule behavior and compatibility depend on the underlying rules and the adapter.
+ *
+ * ## Usage
  *
  * @example Register to deno.json
  * ```json
  * {
  *   "lint": {
  *     "plugins": ["@deno-lint/plugin-react-hooks"],
- *   },
+ *   }
  * }
  * ```
  *
@@ -29,15 +33,6 @@ import { plugin as _plugin } from "./plugin.ts";
 
 /**
  * React Hooks rules adapted for Deno Lint.
- *
- * @example
- * ```ts
- * import plugin from "@deno-lint/plugin-react-hooks";
- * declare const fileName: string;
- * declare const source: string;
- *
- * Deno.lint.runPlugin(plugin, fileName, source);
- * ```
  */
 const plugin: Deno.lint.Plugin = _plugin;
 
