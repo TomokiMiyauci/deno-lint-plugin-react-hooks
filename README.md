@@ -15,7 +15,7 @@ Register to deno.json:
 ```json
 {
   "lint": {
-    "plugins": ["@deno-lint/plugin-react-hooks"]
+    "plugins": ["jsr:@deno-lint/plugin-react-hooks"]
   }
 }
 ```
