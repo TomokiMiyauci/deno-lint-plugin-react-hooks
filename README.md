@@ -25,7 +25,7 @@ Enable specific rules:
 ```json
 {
   "lint": {
-    "plugins": ["@deno-lint/plugin-react-hooks"],
+    "plugins": ["jsr:@deno-lint/plugin-react-hooks"],
     "rules": {
       "include": ["react-hooks/rules-of-hooks", "react-hooks/exhaustive-deps"]
     }
